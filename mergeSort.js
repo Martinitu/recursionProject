@@ -3,12 +3,12 @@
 
 
 const mergeSort = (arr) => {
-    if (arr.length === 0) return "Please provide a non empty array!"
+    if (arr.length === 0) return "you need to enter a non empty array!"
 	if (arr.length === 1) return arr;
 
-let m =Math.floor(arr.length / 2);
+ let    m =Math.floor(arr.length / 2);
  let    l =  arr.slice(0, m);
- let r = arr.slice(m, arr.length);
+ let    r = arr.slice(m, arr.length);
 
 return (merge(mergeSort(l), mergeSort(r)))
 }
@@ -43,4 +43,4 @@ return result
 
 }
 
-console.log(mergeSort([10, 7, 8, 9, 1, 5, 3]))
+console.log(mergeSort([15, 7, 8, 9, 1, 5, 3]))
